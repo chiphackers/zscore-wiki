@@ -4,7 +4,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
 }
-
+.ui.grid.container{
+	min-height:100%;
+}
 .ui.borderless.menu {
     background-color: #f8f8f8;
     box-shadow: none;
@@ -116,6 +118,7 @@ body {
 
   .footer.segment {
     padding: 5em 0em;
+	width:100%;
   }
 
   .secondary.pointing.menu .toc.item {
