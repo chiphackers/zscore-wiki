@@ -1,0 +1,96 @@
+
+/*******************************************************************
+
+This chunk is to fix Bootstrap so that the Markdown output looks good
+
+*******************************************************************/
+
+#markdownContent body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+#markdownContent h1,h2,h3,h4 {
+  margin: 15px 0;
+}
+
+#markdownContent pre {
+  margin: 20px 0;
+}
+
+#markdownContent img {
+  margin: 10px 0;
+  max-width: 100%;
+}
+
+#markdownContent .navbar {
+  z-index: 1;
+}
+
+#markdownContent .table {
+  width: auto;
+}
+
+/*******************************************************************
+
+This chunk is for Google's Code Prettify:
+http://google-code-prettify.googlecode.com
+
+*******************************************************************/
+
+
+/* Pretty printing styles. Used with prettify.js. */
+
+/* SPAN elements with the classes below are added by prettyprint. */
+#markdownContent .pln { color: #000 }  /* plain text */
+
+@media screen {
+  #markdownContent .str { color: #080 }  /* string content */
+  #markdownContent .kwd { color: #008 }  /* a keyword */
+  #markdownContent .com { color: #800 }  /* a comment */
+  #markdownContent .typ { color: #606 }  /* a type name */
+  #markdownContent .lit { color: #066 }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  #markdownContent .pun, .opn, .clo { color: #660 }
+  #markdownContent .tag { color: #008 }  /* a markup tag name */
+  #markdownContent .atn { color: #606 }  /* a markup attribute name */
+  #markdownContent .atv { color: #080 }  /* a markup attribute value */
+  #markdownContent .dec, .var { color: #606 }  /* a declaration; a variable name */
+  #markdownContent .fun { color: red }  /* a function name */
+}
+
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  #markdownContent .str { color: #060 }
+  #markdownContent .kwd { color: #006; font-weight: bold }
+  #markdownContent .com { color: #600; font-style: italic }
+  #markdownContent .typ { color: #404; font-weight: bold }
+  #markdownContent .lit { color: #044 }
+  #markdownContent .pun, .opn, .clo { color: #440 }
+  #markdownContent .tag { color: #006; font-weight: bold }
+  #markdownContent .atn { color: #404 }
+  #markdownContent .atv { color: #060 }
+}
+
+/* Put a border around prettyprinted code snippets. */
+#markdownContent pre.prettyprint { padding: 2px; border: 1px solid #888 }
+
+/* Specify class=linenums on a pre to get line numbering */
+#markdownContent ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+#markdownContent li.L0,
+#markdownContent li.L1,
+#markdownContent li.L2,
+#markdownContent li.L3,
+#markdownContent li.L5,
+#markdownContent li.L6,
+#markdownContent li.L7,
+#markdownContent li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+#markdownContent li.L1,
+#markdownContent li.L3,
+#markdownContent li.L5,
+#markdownContent li.L7,
+#markdownContent li.L9 { background: #eee }
+
