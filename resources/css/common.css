@@ -1,5 +1,5 @@
 body {
-    
+
     padding-top: 54px;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
@@ -224,4 +224,9 @@ input[type=text], select {
 }
 .masthead.short.segment h1.ui.header {
     margin-top: 1em;
+}
+
+#parentMarkdown {
+  margin-top: 2em;
+  margin-left: 1em;
 }
